@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c95bed3a5e1a1f387a28a7211b73848b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c95bed3a5e1a1f387a28a7211b73848b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c95bed3a5e1a1f387a28a7211b73848b = L.map(
+                "map_c95bed3a5e1a1f387a28a7211b73848b",
+                {
+                    center: [44.0, 18.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7ee12640f8b39970d0cf23182b989b7a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c95bed3a5e1a1f387a28a7211b73848b);
+        
+    
+
+        function geo_json_eee5d392c1ebc968d341cb18d63299d6_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_eee5d392c1ebc968d341cb18d63299d6 = L.geoJson(null, {
+                onEachFeature: geo_json_eee5d392c1ebc968d341cb18d63299d6_onEachFeature,
+            
+        });
+
+        function geo_json_eee5d392c1ebc968d341cb18d63299d6_add (data) {
+            geo_json_eee5d392c1ebc968d341cb18d63299d6
+                .addData(data)
+                .addTo(map_c95bed3a5e1a1f387a28a7211b73848b);
+        }
+            geo_json_eee5d392c1ebc968d341cb18d63299d6_add({"bbox": [15.853879005541824, 42.7109769813732, 19.201112152296705, 45.05056080605416], "features": [{"bbox": [17.205976900690594, 44.79467732012036, 17.205976900690594, 44.79467732012036], "geometry": {"coordinates": [17.205976900690594, 44.79467732012036], "type": "Point"}, "id": "0", "properties": {"F1": "Banja Luka", "Padavine": 1026.8}, "type": "Feature"}, {"bbox": [18.350003098071745, 42.7166692598262, 18.350003098071745, 42.7166692598262], "geometry": {"coordinates": [18.350003098071745, 42.7166692598262], "type": "Point"}, "id": "1", "properties": {"F1": "Trebinje", "Padavine": 1744.9}, "type": "Feature"}, {"bbox": [18.44703149585808, 43.50537957457523, 18.44703149585808, 43.50537957457523], "geometry": {"coordinates": [18.44703149585808, 43.50537957457523], "type": "Point"}, "id": "2", "properties": {"F1": "Kalinovik", "Padavine": 1628.6}, "type": "Feature"}, {"bbox": [18.090279909654758, 42.95338738194606, 18.090279909654758, 42.95338738194606], "geometry": {"coordinates": [18.090279909654758, 42.95338738194606], "type": "Point"}, "id": "3", "properties": {"F1": "Ljubinje", "Padavine": 1927.6}, "type": "Feature"}, {"bbox": [18.487137425470607, 42.7109769813732, 18.487137425470607, 42.7109769813732], "geometry": {"coordinates": [18.487137425470607, 42.7109769813732], "type": "Point"}, "id": "4", "properties": {"F1": "Lastva", "Padavine": 1816.7}, "type": "Feature"}, {"bbox": [18.98333291401326, 43.6700005908359, 18.98333291401326, 43.6700005908359], "geometry": {"coordinates": [18.98333291401326, 43.6700005908359], "type": "Point"}, "id": "5", "properties": {"F1": "Gorazde", "Padavine": 794.5}, "type": "Feature"}, {"bbox": [18.161294430122595, 43.09384666651581, 18.161294430122595, 43.09384666651581], "geometry": {"coordinates": [18.161294430122595, 43.09384666651581], "type": "Point"}, "id": "6", "properties": {"F1": "Berkovici", "Padavine": 1627.6}, "type": "Feature"}, {"bbox": [18.940002402722403, 44.18000112078818, 18.940002402722403, 44.18000112078818], "geometry": {"coordinates": [18.940002402722403, 44.18000112078818], "type": "Point"}, "id": "7", "properties": {"F1": "Vlasenica", "Padavine": 1117.2}, "type": "Feature"}, {"bbox": [18.810001617870554, 44.87000180418236, 18.810001617870554, 44.87000180418236], "geometry": {"coordinates": [18.810001617870554, 44.87000180418236], "type": "Point"}, "id": "8", "properties": {"F1": "Brcko", "Padavine": 775.1}, "type": "Feature"}, {"bbox": [17.666013976479782, 44.87001891503468, 17.666013976479782, 44.87001891503468], "geometry": {"coordinates": [17.666013976479782, 44.87001891503468], "type": "Point"}, "id": "9", "properties": {"F1": "Prnjavor", "Padavine": 891.4}, "type": "Feature"}, {"bbox": [17.880000875276263, 44.59000105206384, 17.880000875276263, 44.59000105206384], "geometry": {"coordinates": [17.880000875276263, 44.59000105206384], "type": "Point"}, "id": "10", "properties": {"F1": "Vrucica Teslic", "Padavine": 1037.3}, "type": "Feature"}, {"bbox": [19.201112152296705, 44.7561118673384, 19.201112152296705, 44.7561118673384], "geometry": {"coordinates": [19.201112152296705, 44.7561118673384], "type": "Point"}, "id": "11", "properties": {"F1": "Bijeljina", "Padavine": 737.7}, "type": "Feature"}, {"bbox": [17.370000297869428, 44.62000083388355, 17.370000297869428, 44.62000083388355], "geometry": {"coordinates": [17.370000297869428, 44.62000083388355], "type": "Point"}, "id": "12", "properties": {"F1": "Kotor Varos", "Padavine": 1109.5}, "type": "Feature"}, {"bbox": [17.91000053212058, 44.98000148790801, 17.91000053212058, 44.98000148790801], "geometry": {"coordinates": [17.91000053212058, 44.98000148790801], "type": "Point"}, "id": "13", "properties": {"F1": "Derventa", "Padavine": 891.2}, "type": "Feature"}, {"bbox": [16.85000008162676, 44.27000019798993, 16.85000008162676, 44.27000019798993], "geometry": {"coordinates": [16.85000008162676, 44.27000019798993], "type": "Point"}, "id": "14", "properties": {"F1": "Mliniste", "Padavine": 1468.3}, "type": "Feature"}, {"bbox": [16.46920294986084, 44.50856206333604, 16.46920294986084, 44.50856206333604], "geometry": {"coordinates": [16.46920294986084, 44.50856206333604], "type": "Point"}, "id": "15", "properties": {"F1": "Drinic", "Padavine": 1314.4}, "type": "Feature"}, {"bbox": [18.301945524661235, 44.954130095023686, 18.301945524661235, 44.954130095023686], "geometry": {"coordinates": [18.301945524661235, 44.954130095023686], "type": "Point"}, "id": "16", "properties": {"F1": "Modrica", "Padavine": 838.2}, "type": "Feature"}, {"bbox": [18.422782135191063, 43.86778053586488, 18.422782135191063, 43.86778053586488], "geometry": {"coordinates": [18.422782135191063, 43.86778053586488], "type": "Point"}, "id": "17", "properties": {"F1": "Sarajevo", "Padavine": 931.9}, "type": "Feature"}, {"bbox": [18.330002080255746, 43.82000043954775, 18.330002080255746, 43.82000043954775], "geometry": {"coordinates": [18.330002080255746, 43.82000043954775], "type": "Point"}, "id": "18", "properties": {"F1": "Butmir", "Padavine": 943.4}, "type": "Feature"}, {"bbox": [16.14999873563144, 44.88000050336252, 16.14999873563144, 44.88000050336252], "geometry": {"coordinates": [16.14999873563144, 44.88000050336252], "type": "Point"}, "id": "19", "properties": {"F1": "Bos. Krupa", "Padavine": 1227.7}, "type": "Feature"}, {"bbox": [15.853879005541824, 44.79855019664542, 15.853879005541824, 44.79855019664542], "geometry": {"coordinates": [15.853879005541824, 44.79855019664542], "type": "Point"}, "id": "20", "properties": {"F1": "Bihac", "Padavine": 1309.1}, "type": "Feature"}, {"bbox": [16.679439414816844, 44.76611064770025, 16.679439414816844, 44.76611064770025], "geometry": {"coordinates": [16.679439414816844, 44.76611064770025], "type": "Point"}, "id": "21", "properties": {"F1": "Sanski most", "Padavine": 1023.5}, "type": "Feature"}, {"bbox": [16.38443881516245, 45.05056080605416, 16.38443881516245, 45.05056080605416], "geometry": {"coordinates": [16.38443881516245, 45.05056080605416], "type": "Point"}, "id": "22", "properties": {"F1": "Novi Grad", "Padavine": 917.8}, "type": "Feature"}, {"bbox": [18.633903400152644, 44.732034020947914, 18.633903400152644, 44.732034020947914], "geometry": {"coordinates": [18.633903400152644, 44.732034020947914], "type": "Point"}, "id": "23", "properties": {"F1": "Maoca", "Padavine": 1091.4}, "type": "Feature"}, {"bbox": [18.684925081567584, 44.544168098834305, 18.684925081567584, 44.544168098834305], "geometry": {"coordinates": [18.684925081567584, 44.544168098834305], "type": "Point"}, "id": "24", "properties": {"F1": "Tuzla", "Padavine": 894.3}, "type": "Feature"}, {"bbox": [17.266672941669174, 44.33955267097582, 17.266672941669174, 44.33955267097582], "geometry": {"coordinates": [17.266672941669174, 44.33955267097582], "type": "Point"}, "id": "25", "properties": {"F1": "Jajce", "Padavine": 916.7}, "type": "Feature"}, {"bbox": [17.90000126553538, 44.20167064264934, 17.90000126553538, 44.20167064264934], "geometry": {"coordinates": [17.90000126553538, 44.20167064264934], "type": "Point"}, "id": "26", "properties": {"F1": "Zenica", "Padavine": 782.6}, "type": "Feature"}, {"bbox": [17.450560918491863, 44.06194027152254, 17.450560918491863, 44.06194027152254], "geometry": {"coordinates": [17.450560918491863, 44.06194027152254], "type": "Point"}, "id": "27", "properties": {"F1": "Bugojno", "Padavine": 827.1}, "type": "Feature"}, {"bbox": [17.001110667909487, 43.82471979327226, 17.001110667909487, 43.82471979327226], "geometry": {"coordinates": [17.001110667909487, 43.82471979327226], "type": "Point"}, "id": "28", "properties": {"F1": "Livno", "Padavine": 1146.6}, "type": "Feature"}, {"bbox": [18.03333181396464, 43.766670238269036, 18.03333181396464, 43.766670238269036], "geometry": {"coordinates": [18.03333181396464, 43.766670238269036], "type": "Point"}, "id": "29", "properties": {"F1": "Ivan Sedlo", "Padavine": 1469.1}, "type": "Feature"}, {"bbox": [18.168830834141623, 43.69189193500904, 18.168830834141623, 43.69189193500904], "geometry": {"coordinates": [18.168830834141623, 43.69189193500904], "type": "Point"}, "id": "30", "properties": {"F1": "Bjelasnica", "Padavine": 1120.4}, "type": "Feature"}, {"bbox": [17.78000212218618, 43.13999943931394, 17.78000212218618, 43.13999943931394], "geometry": {"coordinates": [17.78000212218618, 43.13999943931394], "type": "Point"}, "id": "31", "properties": {"F1": "Domanovici", "Padavine": 1135.2}, "type": "Feature"}, {"bbox": [17.79123281651769, 43.35027488140193, 17.79123281651769, 43.35027488140193], "geometry": {"coordinates": [17.79123281651769, 43.35027488140193], "type": "Point"}, "id": "32", "properties": {"F1": "Mostar", "Padavine": 1522.3}, "type": "Feature"}, {"bbox": [16.721109251754392, 44.97556089459401, 16.721109251754392, 44.97556089459401], "geometry": {"coordinates": [16.721109251754392, 44.97556089459401], "type": "Point"}, "id": "33", "properties": {"F1": "Prijedor", "Padavine": 946.9}, "type": "Feature"}, {"bbox": [17.7600159940529, 43.65637103076099, 17.7600159940529, 43.65637103076099], "geometry": {"coordinates": [17.7600159940529, 43.65637103076099], "type": "Point"}, "id": "34", "properties": {"F1": "Jablanica", "Padavine": 1787.5}, "type": "Feature"}, {"bbox": [17.70000206582868, 43.10999936789781, 17.70000206582868, 43.10999936789781], "geometry": {"coordinates": [17.70000206582868, 43.10999936789781], "type": "Point"}, "id": "35", "properties": {"F1": "Capljina", "Padavine": 1114.5}, "type": "Feature"}, {"bbox": [16.821931672307183, 44.05338625523258, 16.821931672307183, 44.05338625523258], "geometry": {"coordinates": [16.821931672307183, 44.05338625523258], "type": "Point"}, "id": "36", "properties": {"F1": "Glamoc", "Padavine": 1360.4}, "type": "Feature"}, {"bbox": [17.271253843184283, 43.990674134201875, 17.271253843184283, 43.990674134201875], "geometry": {"coordinates": [17.271253843184283, 43.990674134201875], "type": "Point"}, "id": "37", "properties": {"F1": "Kupres", "Padavine": 1212.6}, "type": "Feature"}, {"bbox": [17.407262509027074, 43.542294288384056, 17.407262509027074, 43.542294288384056], "geometry": {"coordinates": [17.407262509027074, 43.542294288384056], "type": "Point"}, "id": "38", "properties": {"F1": "Rakitno", "Padavine": 1757.3}, "type": "Feature"}, {"bbox": [17.6029943642617, 43.818524494315646, 17.6029943642617, 43.818524494315646], "geometry": {"coordinates": [17.6029943642617, 43.818524494315646], "type": "Point"}, "id": "39", "properties": {"F1": "Prozor", "Padavine": 904.2}, "type": "Feature"}, {"bbox": [18.095000965321656, 44.73861131733431, 18.095000965321656, 44.73861131733431], "geometry": {"coordinates": [18.095000965321656, 44.73861131733431], "type": "Point"}, "id": "40", "properties": {"F1": "Doboj", "Padavine": 871.0}, "type": "Feature"}, {"bbox": [18.789172473514665, 43.926110774678776, 18.789172473514665, 43.926110774678776], "geometry": {"coordinates": [18.789172473514665, 43.926110774678776], "type": "Point"}, "id": "41", "properties": {"F1": "Sokolac", "Padavine": 801.6}, "type": "Feature"}, {"bbox": [18.60904521421607, 43.24987829568766, 18.60904521421607, 43.24987829568766], "geometry": {"coordinates": [18.60904521421607, 43.24987829568766], "type": "Point"}, "id": "42", "properties": {"F1": "Cemerno", "Padavine": 1826.4}, "type": "Feature"}, {"bbox": [18.545866378088114, 43.162278856892875, 18.545866378088114, 43.162278856892875], "geometry": {"coordinates": [18.545866378088114, 43.162278856892875], "type": "Point"}, "id": "43", "properties": {"F1": "Gacko", "Padavine": 1694.6}, "type": "Feature"}, {"bbox": [18.427621536144006, 42.86847814037618, 18.427621536144006, 42.86847814037618], "geometry": {"coordinates": [18.427621536144006, 42.86847814037618], "type": "Point"}, "id": "44", "properties": {"F1": "Bileca", "Padavine": 1634.0}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        function geo_json_c4d30173a6da6258d5d6329e275e2b6e_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "red", "weight": 3};
+            }
+        }
+
+        function geo_json_c4d30173a6da6258d5d6329e275e2b6e_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_c4d30173a6da6258d5d6329e275e2b6e.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_c4d30173a6da6258d5d6329e275e2b6e_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_c4d30173a6da6258d5d6329e275e2b6e = L.geoJson(null, {
+                onEachFeature: geo_json_c4d30173a6da6258d5d6329e275e2b6e_onEachFeature,
+            
+        });
+
+        function geo_json_c4d30173a6da6258d5d6329e275e2b6e_add (data) {
+            geo_json_c4d30173a6da6258d5d6329e275e2b6e
+                .addData(data)
+                .addTo(map_c95bed3a5e1a1f387a28a7211b73848b);
+        }
+            geo_json_c4d30173a6da6258d5d6329e275e2b6e_add({"bbox": [15.853879005541824, 42.7109769813732, 19.201112152296705, 45.05056080605416], "features": [{"bbox": [17.205976900690594, 44.79467732012036, 17.205976900690594, 44.79467732012036], "geometry": {"coordinates": [17.205976900690594, 44.79467732012036], "type": "Point"}, "id": "0", "properties": {"F1": "Banja Luka", "Padavine": 1026.8}, "type": "Feature"}, {"bbox": [18.350003098071745, 42.7166692598262, 18.350003098071745, 42.7166692598262], "geometry": {"coordinates": [18.350003098071745, 42.7166692598262], "type": "Point"}, "id": "1", "properties": {"F1": "Trebinje", "Padavine": 1744.9}, "type": "Feature"}, {"bbox": [18.44703149585808, 43.50537957457523, 18.44703149585808, 43.50537957457523], "geometry": {"coordinates": [18.44703149585808, 43.50537957457523], "type": "Point"}, "id": "2", "properties": {"F1": "Kalinovik", "Padavine": 1628.6}, "type": "Feature"}, {"bbox": [18.090279909654758, 42.95338738194606, 18.090279909654758, 42.95338738194606], "geometry": {"coordinates": [18.090279909654758, 42.95338738194606], "type": "Point"}, "id": "3", "properties": {"F1": "Ljubinje", "Padavine": 1927.6}, "type": "Feature"}, {"bbox": [18.487137425470607, 42.7109769813732, 18.487137425470607, 42.7109769813732], "geometry": {"coordinates": [18.487137425470607, 42.7109769813732], "type": "Point"}, "id": "4", "properties": {"F1": "Lastva", "Padavine": 1816.7}, "type": "Feature"}, {"bbox": [18.98333291401326, 43.6700005908359, 18.98333291401326, 43.6700005908359], "geometry": {"coordinates": [18.98333291401326, 43.6700005908359], "type": "Point"}, "id": "5", "properties": {"F1": "Gorazde", "Padavine": 794.5}, "type": "Feature"}, {"bbox": [18.161294430122595, 43.09384666651581, 18.161294430122595, 43.09384666651581], "geometry": {"coordinates": [18.161294430122595, 43.09384666651581], "type": "Point"}, "id": "6", "properties": {"F1": "Berkovici", "Padavine": 1627.6}, "type": "Feature"}, {"bbox": [18.940002402722403, 44.18000112078818, 18.940002402722403, 44.18000112078818], "geometry": {"coordinates": [18.940002402722403, 44.18000112078818], "type": "Point"}, "id": "7", "properties": {"F1": "Vlasenica", "Padavine": 1117.2}, "type": "Feature"}, {"bbox": [18.810001617870554, 44.87000180418236, 18.810001617870554, 44.87000180418236], "geometry": {"coordinates": [18.810001617870554, 44.87000180418236], "type": "Point"}, "id": "8", "properties": {"F1": "Brcko", "Padavine": 775.1}, "type": "Feature"}, {"bbox": [17.666013976479782, 44.87001891503468, 17.666013976479782, 44.87001891503468], "geometry": {"coordinates": [17.666013976479782, 44.87001891503468], "type": "Point"}, "id": "9", "properties": {"F1": "Prnjavor", "Padavine": 891.4}, "type": "Feature"}, {"bbox": [17.880000875276263, 44.59000105206384, 17.880000875276263, 44.59000105206384], "geometry": {"coordinates": [17.880000875276263, 44.59000105206384], "type": "Point"}, "id": "10", "properties": {"F1": "Vrucica Teslic", "Padavine": 1037.3}, "type": "Feature"}, {"bbox": [19.201112152296705, 44.7561118673384, 19.201112152296705, 44.7561118673384], "geometry": {"coordinates": [19.201112152296705, 44.7561118673384], "type": "Point"}, "id": "11", "properties": {"F1": "Bijeljina", "Padavine": 737.7}, "type": "Feature"}, {"bbox": [17.370000297869428, 44.62000083388355, 17.370000297869428, 44.62000083388355], "geometry": {"coordinates": [17.370000297869428, 44.62000083388355], "type": "Point"}, "id": "12", "properties": {"F1": "Kotor Varos", "Padavine": 1109.5}, "type": "Feature"}, {"bbox": [17.91000053212058, 44.98000148790801, 17.91000053212058, 44.98000148790801], "geometry": {"coordinates": [17.91000053212058, 44.98000148790801], "type": "Point"}, "id": "13", "properties": {"F1": "Derventa", "Padavine": 891.2}, "type": "Feature"}, {"bbox": [16.85000008162676, 44.27000019798993, 16.85000008162676, 44.27000019798993], "geometry": {"coordinates": [16.85000008162676, 44.27000019798993], "type": "Point"}, "id": "14", "properties": {"F1": "Mliniste", "Padavine": 1468.3}, "type": "Feature"}, {"bbox": [16.46920294986084, 44.50856206333604, 16.46920294986084, 44.50856206333604], "geometry": {"coordinates": [16.46920294986084, 44.50856206333604], "type": "Point"}, "id": "15", "properties": {"F1": "Drinic", "Padavine": 1314.4}, "type": "Feature"}, {"bbox": [18.301945524661235, 44.954130095023686, 18.301945524661235, 44.954130095023686], "geometry": {"coordinates": [18.301945524661235, 44.954130095023686], "type": "Point"}, "id": "16", "properties": {"F1": "Modrica", "Padavine": 838.2}, "type": "Feature"}, {"bbox": [18.422782135191063, 43.86778053586488, 18.422782135191063, 43.86778053586488], "geometry": {"coordinates": [18.422782135191063, 43.86778053586488], "type": "Point"}, "id": "17", "properties": {"F1": "Sarajevo", "Padavine": 931.9}, "type": "Feature"}, {"bbox": [18.330002080255746, 43.82000043954775, 18.330002080255746, 43.82000043954775], "geometry": {"coordinates": [18.330002080255746, 43.82000043954775], "type": "Point"}, "id": "18", "properties": {"F1": "Butmir", "Padavine": 943.4}, "type": "Feature"}, {"bbox": [16.14999873563144, 44.88000050336252, 16.14999873563144, 44.88000050336252], "geometry": {"coordinates": [16.14999873563144, 44.88000050336252], "type": "Point"}, "id": "19", "properties": {"F1": "Bos. Krupa", "Padavine": 1227.7}, "type": "Feature"}, {"bbox": [15.853879005541824, 44.79855019664542, 15.853879005541824, 44.79855019664542], "geometry": {"coordinates": [15.853879005541824, 44.79855019664542], "type": "Point"}, "id": "20", "properties": {"F1": "Bihac", "Padavine": 1309.1}, "type": "Feature"}, {"bbox": [16.679439414816844, 44.76611064770025, 16.679439414816844, 44.76611064770025], "geometry": {"coordinates": [16.679439414816844, 44.76611064770025], "type": "Point"}, "id": "21", "properties": {"F1": "Sanski most", "Padavine": 1023.5}, "type": "Feature"}, {"bbox": [16.38443881516245, 45.05056080605416, 16.38443881516245, 45.05056080605416], "geometry": {"coordinates": [16.38443881516245, 45.05056080605416], "type": "Point"}, "id": "22", "properties": {"F1": "Novi Grad", "Padavine": 917.8}, "type": "Feature"}, {"bbox": [18.633903400152644, 44.732034020947914, 18.633903400152644, 44.732034020947914], "geometry": {"coordinates": [18.633903400152644, 44.732034020947914], "type": "Point"}, "id": "23", "properties": {"F1": "Maoca", "Padavine": 1091.4}, "type": "Feature"}, {"bbox": [18.684925081567584, 44.544168098834305, 18.684925081567584, 44.544168098834305], "geometry": {"coordinates": [18.684925081567584, 44.544168098834305], "type": "Point"}, "id": "24", "properties": {"F1": "Tuzla", "Padavine": 894.3}, "type": "Feature"}, {"bbox": [17.266672941669174, 44.33955267097582, 17.266672941669174, 44.33955267097582], "geometry": {"coordinates": [17.266672941669174, 44.33955267097582], "type": "Point"}, "id": "25", "properties": {"F1": "Jajce", "Padavine": 916.7}, "type": "Feature"}, {"bbox": [17.90000126553538, 44.20167064264934, 17.90000126553538, 44.20167064264934], "geometry": {"coordinates": [17.90000126553538, 44.20167064264934], "type": "Point"}, "id": "26", "properties": {"F1": "Zenica", "Padavine": 782.6}, "type": "Feature"}, {"bbox": [17.450560918491863, 44.06194027152254, 17.450560918491863, 44.06194027152254], "geometry": {"coordinates": [17.450560918491863, 44.06194027152254], "type": "Point"}, "id": "27", "properties": {"F1": "Bugojno", "Padavine": 827.1}, "type": "Feature"}, {"bbox": [17.001110667909487, 43.82471979327226, 17.001110667909487, 43.82471979327226], "geometry": {"coordinates": [17.001110667909487, 43.82471979327226], "type": "Point"}, "id": "28", "properties": {"F1": "Livno", "Padavine": 1146.6}, "type": "Feature"}, {"bbox": [18.03333181396464, 43.766670238269036, 18.03333181396464, 43.766670238269036], "geometry": {"coordinates": [18.03333181396464, 43.766670238269036], "type": "Point"}, "id": "29", "properties": {"F1": "Ivan Sedlo", "Padavine": 1469.1}, "type": "Feature"}, {"bbox": [18.168830834141623, 43.69189193500904, 18.168830834141623, 43.69189193500904], "geometry": {"coordinates": [18.168830834141623, 43.69189193500904], "type": "Point"}, "id": "30", "properties": {"F1": "Bjelasnica", "Padavine": 1120.4}, "type": "Feature"}, {"bbox": [17.78000212218618, 43.13999943931394, 17.78000212218618, 43.13999943931394], "geometry": {"coordinates": [17.78000212218618, 43.13999943931394], "type": "Point"}, "id": "31", "properties": {"F1": "Domanovici", "Padavine": 1135.2}, "type": "Feature"}, {"bbox": [17.79123281651769, 43.35027488140193, 17.79123281651769, 43.35027488140193], "geometry": {"coordinates": [17.79123281651769, 43.35027488140193], "type": "Point"}, "id": "32", "properties": {"F1": "Mostar", "Padavine": 1522.3}, "type": "Feature"}, {"bbox": [16.721109251754392, 44.97556089459401, 16.721109251754392, 44.97556089459401], "geometry": {"coordinates": [16.721109251754392, 44.97556089459401], "type": "Point"}, "id": "33", "properties": {"F1": "Prijedor", "Padavine": 946.9}, "type": "Feature"}, {"bbox": [17.7600159940529, 43.65637103076099, 17.7600159940529, 43.65637103076099], "geometry": {"coordinates": [17.7600159940529, 43.65637103076099], "type": "Point"}, "id": "34", "properties": {"F1": "Jablanica", "Padavine": 1787.5}, "type": "Feature"}, {"bbox": [17.70000206582868, 43.10999936789781, 17.70000206582868, 43.10999936789781], "geometry": {"coordinates": [17.70000206582868, 43.10999936789781], "type": "Point"}, "id": "35", "properties": {"F1": "Capljina", "Padavine": 1114.5}, "type": "Feature"}, {"bbox": [16.821931672307183, 44.05338625523258, 16.821931672307183, 44.05338625523258], "geometry": {"coordinates": [16.821931672307183, 44.05338625523258], "type": "Point"}, "id": "36", "properties": {"F1": "Glamoc", "Padavine": 1360.4}, "type": "Feature"}, {"bbox": [17.271253843184283, 43.990674134201875, 17.271253843184283, 43.990674134201875], "geometry": {"coordinates": [17.271253843184283, 43.990674134201875], "type": "Point"}, "id": "37", "properties": {"F1": "Kupres", "Padavine": 1212.6}, "type": "Feature"}, {"bbox": [17.407262509027074, 43.542294288384056, 17.407262509027074, 43.542294288384056], "geometry": {"coordinates": [17.407262509027074, 43.542294288384056], "type": "Point"}, "id": "38", "properties": {"F1": "Rakitno", "Padavine": 1757.3}, "type": "Feature"}, {"bbox": [17.6029943642617, 43.818524494315646, 17.6029943642617, 43.818524494315646], "geometry": {"coordinates": [17.6029943642617, 43.818524494315646], "type": "Point"}, "id": "39", "properties": {"F1": "Prozor", "Padavine": 904.2}, "type": "Feature"}, {"bbox": [18.095000965321656, 44.73861131733431, 18.095000965321656, 44.73861131733431], "geometry": {"coordinates": [18.095000965321656, 44.73861131733431], "type": "Point"}, "id": "40", "properties": {"F1": "Doboj", "Padavine": 871.0}, "type": "Feature"}, {"bbox": [18.789172473514665, 43.926110774678776, 18.789172473514665, 43.926110774678776], "geometry": {"coordinates": [18.789172473514665, 43.926110774678776], "type": "Point"}, "id": "41", "properties": {"F1": "Sokolac", "Padavine": 801.6}, "type": "Feature"}, {"bbox": [18.60904521421607, 43.24987829568766, 18.60904521421607, 43.24987829568766], "geometry": {"coordinates": [18.60904521421607, 43.24987829568766], "type": "Point"}, "id": "42", "properties": {"F1": "Cemerno", "Padavine": 1826.4}, "type": "Feature"}, {"bbox": [18.545866378088114, 43.162278856892875, 18.545866378088114, 43.162278856892875], "geometry": {"coordinates": [18.545866378088114, 43.162278856892875], "type": "Point"}, "id": "43", "properties": {"F1": "Gacko", "Padavine": 1694.6}, "type": "Feature"}, {"bbox": [18.427621536144006, 42.86847814037618, 18.427621536144006, 42.86847814037618], "geometry": {"coordinates": [18.427621536144006, 42.86847814037618], "type": "Point"}, "id": "44", "properties": {"F1": "Bileca", "Padavine": 1634.0}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_c4d30173a6da6258d5d6329e275e2b6e.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["F1", "Padavine"];
+    let aliases = ["F1", "Padavine"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+</script>
+</html>
